@@ -1,4 +1,1 @@
-John, Cena, 100000, 567, SW Engineer, jc@gmail.com
-Ellen, Mirran, 200000, 599, FullStack Engineer
-patrick, akina, 40000.00, 69, higher up, pk@gmail.com
-
+John,  Cena,  100000,  567,  SW Engineer,  jc@gmail.com

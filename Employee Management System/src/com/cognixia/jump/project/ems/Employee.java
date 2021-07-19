@@ -25,7 +25,7 @@ public class Employee implements Initial{
 			setSalary(salary);
 			break;
 		case 3:
-			int employeeId = Integer.parseInt(attribute);
+			int employeeId = Integer.parseInt(attribute.trim());
 			setEmployeeId(employeeId);
 			break;
 		case 4: 

@@ -60,78 +60,75 @@ public class ManagementRunner extends Departments implements Initial, Filtered{
 			//String[] attributes = {};
 			for(Employee emp: departmentEmployees) {
 	
-				String[] details = emp.toString().split(", ");
-				if(details[3] == employeeId) {
-					System.out.println("Enter 1 to edit the first name\n"
-							+ "Enter 2 to edit the last name\nEnter 3 to edit the salary"
-							+ "Enter 4 to edit the id Number\nEnter 5 to edit the position\n"
-							+ "Enter 6 to edit email");
-					int employeeFieldToEdit = input.nextInt();
-					switch(employeeFieldToEdit){
-					case 1: //edit first name
-						
-						System.out.println("Enter a first name: ");
-						String firstName = input.nextLine();
-						String[] attributes = {firstName, emp.getLastName(), 
-								Double.toString(emp.getSalary()),
-								Integer.toString(emp.getEmployeeId()),
-								emp.getPosition(),emp.getPosition(),
-								emp.getEmail()};
-						String filePath = getFilePath(departmentDir.get(departmentKey));
-						editRecord(filePath, employeeId, attributes);
-						break;
-						
-					case 2: //edit last name
-						System.out.println("Enter a last name: ");
-						String lastName = input.nextLine();
-						String[] attributes1 = {emp.getFirstName(), lastName, 
-								Double.toString(emp.getSalary()),
-								Integer.toString(emp.getEmployeeId()),
-								emp.getPosition(),emp.getPosition(),
-								emp.getEmail()};
-						String filePath1 = getFilePath(departmentDir.get(departmentKey));
-						editRecord(filePath1, employeeId, attributes1);
-						break;
-						
-					case 3: //edit salary
-						System.out.println("Enter a salary (type double): ");
-						String salary = input.nextLine();
-						String[] attributes2 = {emp.getFirstName(), emp.getLastName(),
-								salary, Integer.toString(emp.getEmployeeId()),
-								emp.getPosition(), emp.getEmail()};
-						String filePath2 = getFilePath(departmentDir.get(departmentKey));
-						editRecord(filePath2, employeeId, attributes2);
-						break;
-						
-					case 4: //edit employee Id
-						System.out.println("Enter a new integer id");
-						String empId = input.nextLine();
-						String[] attributes3 = {emp.getFirstName(), emp.getLastName(),
-								Double.toString(emp.getSalary()), empId,
-								emp.getPosition(), emp.getEmail()};
-						String filePath3 = getFilePath(departmentDir.get(departmentKey));
-						editRecord(filePath3, employeeId, attributes3);
-						break;
-					case 5: //edit position
-						System.out.println("Enter a new position");
-						String position = input.nextLine();
-						String[] attributes4 = {emp.getFirstName(), emp.getLastName(),
-								Double.toString(emp.getSalary()), Integer.toString(emp.getEmployeeId()),
-								position, emp.getEmail()};
-						String filePath4 = getFilePath(departmentDir.get(departmentKey));
-						editRecord(filePath4, employeeId, attributes4);
-						break;
-					case 6: //edit email
-						System.out.println("Enter a new email: ");
-						String email = input.nextLine();
-						String[] attributes5 = {emp.getFirstName(), emp.getLastName(),
-								Double.toString(emp.getSalary()), Integer.toString(emp.getEmployeeId()),
-								emp.getPosition(), email};
-						String filePath5 = getFilePath(departmentDir.get(departmentKey));
-						editRecord(filePath5, employeeId, attributes5);
-						break;
-
-						}
+				//String[] details = emp.toString().split(", ");
+				System.out.println("Enter 1 to edit the first name\n"
+						+ "Enter 2 to edit the last name\nEnter 3 to edit the salary\n"
+						+ "Enter 4 to edit the id Number\nEnter 5 to edit the position\n"
+						+ "Enter 6 to edit email");
+				int employeeFieldToEdit = input.nextInt();
+				switch(employeeFieldToEdit){
+				case 1: //edit first name
+					
+					System.out.println("Enter a first name: ");
+					String firstName = input.nextLine();
+					String[] attributes = {firstName, emp.getLastName(), 
+							Double.toString(emp.getSalary()),
+							Integer.toString(emp.getEmployeeId()),
+							emp.getPosition(),emp.getPosition(),
+							emp.getEmail()};
+					String filePath = getFilePath(departmentDir.get(departmentKey));
+					editRecord(filePath, employeeId, attributes);
+					break;
+					
+				case 2: //edit last name
+					System.out.println("Enter a last name: ");
+					String lastName = input.nextLine();
+					String[] attributes1 = {emp.getFirstName(), lastName, 
+							Double.toString(emp.getSalary()),
+							Integer.toString(emp.getEmployeeId()),
+							emp.getPosition(),emp.getPosition(),
+							emp.getEmail()};
+					String filePath1 = getFilePath(departmentDir.get(departmentKey));
+					editRecord(filePath1, employeeId, attributes1);
+					break;
+					
+				case 3: //edit salary
+					System.out.println("Enter a salary (type double): ");
+					String salary = input.nextLine();
+					String[] attributes2 = {emp.getFirstName(), emp.getLastName(),
+							salary, Integer.toString(emp.getEmployeeId()),
+							emp.getPosition(), emp.getEmail()};
+					String filePath2 = getFilePath(departmentDir.get(departmentKey));
+					editRecord(filePath2, employeeId, attributes2);
+					break;
+					
+				case 4: //edit employee Id
+					System.out.println("Enter a new integer id");
+					String empId = input.nextLine();
+					String[] attributes3 = {emp.getFirstName(), emp.getLastName(),
+							Double.toString(emp.getSalary()), empId,
+							emp.getPosition(), emp.getEmail()};
+					String filePath3 = getFilePath(departmentDir.get(departmentKey));
+					editRecord(filePath3, employeeId, attributes3);
+					break;
+				case 5: //edit position
+					System.out.println("Enter a new position");
+					String position = input.nextLine();
+					String[] attributes4 = {emp.getFirstName(), emp.getLastName(),
+							Double.toString(emp.getSalary()), Integer.toString(emp.getEmployeeId()),
+							position, emp.getEmail()};
+					String filePath4 = getFilePath(departmentDir.get(departmentKey));
+					editRecord(filePath4, employeeId, attributes4);
+					break;
+				case 6: //edit email
+					System.out.println("Enter a new email: ");
+					String email = input.nextLine();
+					String[] attributes5 = {emp.getFirstName(), emp.getLastName(),
+							Double.toString(emp.getSalary()), Integer.toString(emp.getEmployeeId()),
+							emp.getPosition(), email};
+					String filePath5 = getFilePath(departmentDir.get(departmentKey));
+					editRecord(filePath5, employeeId, attributes5);
+					break;
 
 					}
 				}
