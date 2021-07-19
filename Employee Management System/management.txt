@@ -1,2 +1,0 @@
-Albert, Camus, 200000, 788, National Manager, ac@gmail.com
-Kim, Possible, 39222, 783, SW Regional Manager

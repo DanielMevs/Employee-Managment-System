@@ -1,2 +1,0 @@
-Ellen, Degenerous, 30000, 695, Customer-service Representative, ed@gmail.com
-Dave, Mathews, 49000, 654, Customer-service Agent

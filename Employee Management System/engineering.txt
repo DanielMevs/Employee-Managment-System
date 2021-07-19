@@ -1,2 +1,0 @@
-John, Cena, 100000, 567, SW Engineer, jc@gmail.com
-Ellen, Mirran, 200000, 599, FullStack Engineer
